@@ -1,0 +1,595 @@
+ @charset "utf-8";
+*{margin:0px;padding:0px}
+/* h5*/
+body{
+    background-color:rgb(230, 230, 230);
+    font-family:Arial, Verdana,'Lucida Grande', Helvetica, sans-serif;
+    text-align: center;
+    color: #333333;
+}
+
+
+header{
+    background: url(Img/bgheader.jpg) no-repeat #85D0ED;
+    width: 1200px;
+    height: 203px;
+    padding-top: 0px;
+    margin: 0px auto;
+    color: #000000;
+    }
+
+.header-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between left and right content */
+}
+
+.header-left h1 {
+    float:left;
+    font-size:3.9em;
+    padding-top:60px;
+    padding-left:37px;
+    font-family:Arial,verdana, sans-serif;
+    color:#37210c;
+    font-weight:bolder;
+    letter-spacing:-1px;
+}
+
+.header-right ul {
+    list-style:none;
+    float:left;
+    list-style: ; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-right: 120px; /* Space between items */
+}
+
+.header-right ul li {
+    font-size: 1.4em;
+    text-align: left;
+    margin: 15px; /* Space between items */
+}
+
+.header-right ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size for navigation links */
+    padding: 5px 10px; /* Padding for navigation links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header-right ul li a:hover {
+    color: #f4a261; /* Change color on hover */
+}
+
+header h1 {
+    float:left;
+    font-size:3.9em;
+    padding-top:60px;
+    padding-left:37px;
+    font-family:Arial,verdana, sans-serif;
+    color:#37210c;
+    font-weight:bolder;
+    letter-spacing:-1px;
+    }
+
+header p{
+    font: normal 1.0em Arial, Verdana, Helvetica, sans-serif;
+    font-size:1.0em;
+    color: #000000;
+    padding:10px;
+    text-align:center;
+    }
+
+
+nav{
+    list-style-type:none;
+    margin:0px auto;
+    width:1200px;
+    background-color:#303;
+    clear:both;
+    }
+nav ul, nav ol{
+    list-style:none;
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left:0px;
+    width:1200px;
+    }
+nav ul li{
+    text-align:center;
+    float:left;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    width:300px;
+    flex: 1; /* Allow items to grow and shrink */
+    }
+
+nav ul li a{
+    display:block;
+    background-color:#37210c;
+    border-right:1px solid #fff;
+    line-height:2.5em;
+    margin-right:0px;
+    padding:8px 14px 8px 14px;
+    color: #ecf9ff;
+    font-weight:normal;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    }
+
+
+nav li a:hover{
+    color: #000;
+    background-color:#ecf9ff;
+    }
+
+nav ul li .selected{
+    color: #ecf9ff;
+    background-color:#e67e1f;
+    }
+    
+    
+aside{
+    float:left;
+    list-style:none;
+    margin-left:10px;
+    height:50%;
+    }
+
+aside ul{
+    list-style-type: none; /* Remove default bullets */
+    list-style:none;
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-left:0px;
+    }
+
+aside li{
+    text-align:left;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-bottom:1px solid #eaeada;
+    }
+    
+aside ul li::before {
+    content: ;
+    position: absolute;
+    left: 0; /* Position the bullet on the left */
+    color: black; /* Bullet color */
+    font-size: 20px; /* Bullet size */
+}
+
+aside ul li a{
+    background-image:;
+    background-repeat:no-repeat;
+    background-position:left center;
+    display:block;
+    background-color:#ffffff;
+    line-height:1.6em;
+    margin-right:0px;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:22px;
+    color: #666666;
+    font-weight:normal;
+    font-size: 0.8em;
+    text-decoration: none;
+    width:165px;
+    }
+
+
+aside  li a:hover{
+    color: #37210c;
+    background-color:#f7f7f2;
+    }
+
+
+aside .selected{
+    color: #37210c;
+    background-color:#f7f7f2;
+    }
+
+
+
+
+#content{
+    margin:auto auto;
+    width:1200px;
+    background-color:#dfeef9;
+    /* background-size: contain; */
+    /* height:100%; */
+    overflow-y: hidden;
+    /* background-repeat: repeat-y; */
+    clear:both;
+    }
+
+smallsection{
+    float:left;
+    width:30%;
+    margin-right:0px;
+    margin-top:0px;
+    background-color:#FFF;
+    text-align:left;
+    font-size:1.0em;
+    padding:5px;
+    }
+
+mediumsection{
+    float:left;
+    width:45%;
+    margin-right:0px;
+    margin-top:0px;
+    background-color:#FFF;
+    text-align:left;
+    font-size:1.3em;
+    padding:5px;
+    }
+
+mediumsection h1{
+    display:block;
+    font-size:1.9em;
+    width:500px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    font-family:arial;
+    font-weight:bold;
+    padding:5px;
+    margin-top:5px;
+    margin-left:12px;
+    }
+
+mediumsection h2{
+    display:block;
+    font-size:1.6em;
+    width:50px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    font-family:arial;
+    font-weight:bold;
+    padding:5px;
+    margin-top:5px;
+    margin-left:12px;
+    }
+
+mediumsection p{
+    font: normal 1.0em Arial, Verdana, Helvetica, sans-serif;
+    font-size:1.0em;
+    color: #000000;
+    padding:10px;
+    text-align:left;
+    }
+
+largesection{
+    float:left;
+    width:68%;
+    margin-right:0px;
+    margin-top:0px;
+    background-color:#FFF;
+    text-align:left;
+    font-size:1.3em;
+    padding:5px;
+    }
+
+largesection h1{
+    display:block;
+    font-size:1.9em;
+    width:1000px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:12px;
+    }
+
+largesection h2{
+    display:block;
+    font-size:1.6em;
+    width:1000px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:40px;
+    }
+
+largesection h3{
+    display:block;
+    font-size:1.3em;
+    width:1200px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:40px;
+    }
+
+largesection p{
+    font: normal 1.0em Arial, Verdana, Helvetica, sans-serif;
+    font-size:1.0em;
+    color: #000000;
+    padding:10px;
+    text-align:left;
+    margin-left:40px;
+    }
+
+fullsection{
+    float:left;
+    width:100%;
+    margin-right:0px;
+    margin-top:0px;
+    background-color:#FFF;
+    text-align:left;
+    font-size:1.3em;
+    padding:5px;
+    }
+
+fullsection h1{
+    display:block;
+    font-size:1.9em;
+    width:1200px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:12px;
+    }
+
+fullsection h2{
+    display:block;
+    font-size:1.6em;
+    width:1200px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:40px;
+    }
+
+fullsection h3{
+    display:block;
+    font-size:1.3em;
+    width:1200px;
+    font-family: arial;
+    text-align:left;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:40px;
+    }
+
+fullsection p{
+    font: normal 1.0em Arial, Verdana, Helvetica, sans-serif;
+    font-size:1.0em;
+    color: #000000;
+    padding:10px;
+    text-align:left;
+    margin-left:40px;
+    }
+
+adjustiblesection{
+    float:var(--float);
+    width:var(--width);
+    margin-left:var(--margin-left);
+    margin-right:var(--margin-right);
+    margin-top:var(--margin-top);
+    margin-bottom:var(--margin-bottom);
+    background-color:#FFF;
+    text-align:left;
+    font-size:1.3em;
+    padding:5px;
+}
+
+headersection{
+    float:left;
+    width:100%;
+    margin-right:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:#FFF;
+    text-align:center;
+    font-size:1.3em;
+    padding:0px;
+    }
+
+headersection h1{
+    display:block;
+    font-size:1.9em;
+    width:1200px;
+    font-family: arial;
+    text-align:center;
+    font-weight:bold;
+    color:#403f3b;
+    padding:5px;
+    margin-top:5px;
+    margin-left:12px;
+    }
+
+footer {
+    width:1200px;
+    height: 80px;
+    clear:both;
+    background-color:#dfeef9;
+    color:#666666;;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
+
+footer p{
+    font-size:0.7em;
+    font-family:arial;
+    font-weight:normal;
+    line-height: 1.0em;
+    color:#555555;
+    padding:35px 0 0 10px;
+    text-align:center;
+    }
+
+
+footer a {
+    font-size:1em;
+    text-decration:none;
+    font-weight:normal;
+    color:#467AA7;
+    text-align:center;
+    }
+
+
+footer a:hover{
+    text-decoration:underline;
+    font-weight:normal;
+    color:#467AA7;
+    text-align:center;
+    }
+
+
+
+
+.container {
+    display: flex;
+    align-items: top; /* Vertically centers content within the container */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 0px; /* Adds some padding around the container */
+    margin-top: 5pt; 
+    margin-bottom: 5pt;  
+    margin-left: 5pt;  
+    margin-right: 5pt;  
+    background-color:#FFF;*/
+}
+
+/* Style for the text section */
+.text {
+    flex: 1; /* Takes up available space */
+    margin-right: 20px; /* Adds space between text and figure */
+}
+
+.text h1{
+    text-align:var(--text-align);
+    padding: 0px; /* Adds some padding around the container */
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+    margin-left: 10px;  
+    margin-right: 10px; 
+}
+.text h2{
+    text-align:var(--text-align);
+    padding: 0px; /* Adds some padding around the container */
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+    margin-left: 10px;  
+    margin-right: 10px; 
+}
+.text h3{
+    text-align:var(--text-align);
+    padding: 0px; /* Adds some padding around the container */
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+    margin-left: 10px;  
+    margin-right: 10px; 
+}
+
+.text p{
+    margin-top: var(--margin-top);  
+    margin-bottom: var(--margin-bottom);  
+    margin-left: var(--margin-left);  
+    margin-right: var(--margin-right); 
+    text-align:var(--text-align);
+    padding:var(--padding);
+    font-size: 1.2em;
+}
+
+
+
+.text ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: ; /* Remove default padding */
+    margin-top: var(--margin-top);  
+    margin-bottom: var(--margin-bottom);  
+    margin-left: var(--margin-left);  
+    margin-right: var(--margin-right); 
+}
+
+.text ul li {
+    position: relative; /* For custom bullet positioning */
+    padding-left: 15px; /* Space for custom bullet */
+    margin-bottom: 5px; /* Space between list items */
+    text-align:left;
+    font-size: 1.2em;
+}
+
+.text ul li::before {
+    content: '•'; /* Custom bullet character */
+    position: absolute;
+    left: 0; /* Position the bullet on the left */
+    color: black; /* Bullet color */
+    font-size: 20px; /* Bullet size */
+    font-size: 1.2em;
+}
+/* Style for the figure section */
+.figure {
+    flex: 0 0 auto; /* Prevents the figure from growing or shrinking */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.figure figcaption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Style for the figure section */
+.buttons {
+    flex: 1; /* Prevents the figure from growing or shrinking */
+}
+
+
+.table th, td{
+  border-bottom: 1px solid #ddd; /* Adds a top border to each cell */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
