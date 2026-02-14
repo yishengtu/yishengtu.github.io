@@ -485,6 +485,7 @@ footer a:hover{
 .text {
     flex: 1; /* Takes up available space */
     margin-right: 20px; /* Adds space between text and figure */
+    font-size: 16px;
 }
 
 .text h1{
@@ -494,6 +495,7 @@ footer a:hover{
     margin-bottom: 10px;  
     margin-left: 10px;  
     margin-right: 10px; 
+    font-size: 28px;
 }
 .text h2{
     text-align:var(--text-align);
@@ -502,6 +504,7 @@ footer a:hover{
     margin-bottom: 10px;  
     margin-left: 10px;  
     margin-right: 10px; 
+    font-size: 23px;
 }
 .text h3{
     text-align:var(--text-align);
@@ -510,6 +513,7 @@ footer a:hover{
     margin-bottom: 10px;  
     margin-left: 10px;  
     margin-right: 10px; 
+    font-size: 18px;
 }
 
 .text p{
@@ -519,7 +523,7 @@ footer a:hover{
     margin-right: var(--margin-right); 
     text-align:var(--text-align);
     padding:var(--padding);
-    font-size: 1.2em;
+    font-size: var(--font-size);
 }
 
 

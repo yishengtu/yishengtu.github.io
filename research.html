@@ -17,7 +17,7 @@
       </div>
       <div class="header-right">
         <ul>
-           <li><i class="fas fa-envelope icon"> </i> email: yt2cr@virginia.edu </li>
+           <li><i class="fas fa-envelope icon"> </i> email: yitu@umich.edu </li>
            <li><i class="fab fa-github icon"> </i> Github: @yishengtu </li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
     <ul>
         <li><a href="index.html"> Home </a></li>
         <li><a href="research.html"> Research </a></li>
-        <li><a href="publications.html"> Publications </a></li>
+        <li><a href="publications.html"> CV </a></li>
         <li><a href="miscellaneous.html"> Miscellaneous</a></li>
     </ul>
 </nav>
@@ -44,8 +44,8 @@
   </h1>
   <div class="container">
     <div class="text">
-      <p style="--font-size:1.3em; --text-align: left; --margin-left: 15px">
-        magneto-hydrodynamics simulations, protostellar disks, protoplanetary disks, <br> dust grain dynamics and grain growth, code development
+      <p style="--font-size:1.3em; --text-align: left; --margin-left: 15px"; --margin-top: 15px"; --margin-bottom: 15px"; --margin-right: 15px">
+      	Numerical modeling of star formation and protoplanetary disks, and their connection to the solar nebula and meteorites. <br>
       </p>
     </div>
   </div>
@@ -53,29 +53,79 @@
   <!--- Current projects ----------->
   <!-------------------------------->
   <h1>
-     Current projects
+     Projects
   </h1>
+  <!------------------->
+  <!--- Outburst ------>
+  <!------------------->
+  <div class="container">
+    <div class="text">
+      <h1 style="--text-align: left"> 
+        Triggering and Long-term effects of FUor-type outburst
+      </h1>
+      <p style="--text-align: left; --margin-left: 15px">
+          Circumstellar disks are often modeled as cold and quiescent, with a magnetically active zone near the star extending only a fraction of an au. However, energetic events like giant FU Orionis outbursts—where accretion boosts luminosity by 10<sup>3</sup>–10<sup>4</sup>—can dramatically reshape the disk. During these outbursts, the magnetically active zone can expand several au into normally "dead" regions, triggering MRI and leaving long-lasting effects on disk dynamics and planet formation. How such events are triggered and eventually subside remains unclear due to the complex, coupled physics involved. In this project, we use state-of-the-art radiative non-ideal MHD simulations to model both their onset and long-term decay.
+      </p>
+
+      <h3>Part 1: Trigging an FUor event in 2D </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+	(on going)
+      </p>
+
+      <h3>Part 2: Trigging an FUor event in 3D </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+	(on going)
+      </p>
+
+      <h3>Part 3: Decay and long-term effect of FUor event </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+	(on going)
+      </p>
+    </div>
+    <div class="figure" style="width: 500px">
+      <img src="FUOri_f3D_3slices_00100.png" alt="Example Figure" style="width: 500px; height: auto;">
+      <figcaption> 3D slices of an FUor model </figcaption> 
+    </div>
+  </div>
   <!------------------->
   <!--- Jet ----------->
   <!------------------->
   <div class="container">
     <div class="text">
-      <h2 style="--text-align: left"> 
-        Jet launching in protoplanetary disks
-      </h2>
+      <h1 style="--text-align: left"> 
+        Jet launching from protoplanetary disks
+      </h1>
       <p style="--text-align: left; --margin-left: 15px">
-        Jets are always observed accompaning young stellar objects (YSOs), yet their formation is still an area of active debate. Unlike in the Active Galactic Nuclei (AGNs) environment, where the jet can be powered by the black hole itself, the YSOs don't have such luxury and must rely on the release of gravitational energy to launch the jet, typically believed through magnetic fields threading the disk.
-        <br>
-        <br>
-        In this project, we aim to illucidate how jets are launched from YSOs. Currently we are preparing a first publication of the "avalanche accretion stream-driven jet launching model", proposed based on our 2D (axis-symmetric) non-ideal MHD simulation that includes an inner "disk active zone" (where thermal ionization dominates and the disk is in the ideal MHD limit) and an outer "disk dead zone" (where ionization fraction low and ohmic dissipate removes magnetic field efficiently). 
-        <br>
-        <br>
-        The simulations are expected to be extended to 3D to relax the assumption of axis-symmetry, and to include effects achievable only in 3D such as azimutual asymmetric, azimuthal magnetic reconnection, and 3D instablities.
+          Jets and outflows are commonly observed in young stellar objects (YSOs), yet their launching mechanisms remain poorly understood. In this project, we use numerical simulations to investigate how jets are launched from YSOs and to connect our models with observable signatures.
+      </p>
+
+      <h3>Part 1: Disk-Only Simulations</h3>
+      <p style="--text-align: left; --margin-left: 15px">
+         We performed 2D and 3D non-ideal MHD simulations of a magnetized circumstellar disk and found that the outflow separates into three components: a polar jet, a laminar disk wind, and an intermediate MRI-driven turbulent wind. Both the jet and disk wind are powered by toroidal magnetic pressure, despite sharing many similarities with the magneto-centrifugal model. The jet can appear one-sided due to asymmetric mass loading by MRI turbulence on one side and confinement by an avalanche accretion stream on the other.
+      </p>
+
+      <h3>Part 2: Including the Stellar Magnetosphere</h3>
+      <p style="--text-align: left; --margin-left: 15px">
+	We introduced a rotating stellar dipole field to study magnetosphere–disk interaction and found that it launches a strong bipolar jet powered by toroidal magnetic pressure. The jet operates through a “load–fire–reload” cycle along magnetic field lines connecting the star and disk: differential rotation between the two footpoints builds up toroidal field and pressure, which then accelerates gas and opens the field lines. Magnetic reconnection resets the field geometry, and because the system is inherently three-dimensional, different regions can be in different phases of the cycle simultaneously, producing a quasi-steady jet at large distances.
+      </p>
+
+      <h3>Part 3: Jet Propertity Dependency on Stellar Spin and Field Strength </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	Using 3D non-ideal MHD simulations, we show that jet properties depend sensitively on stellar rotation and magnetic field strength. All Jets are launched by "two-legged" magnetic field lines linking the star and disk, forming a characteristic "spline–tower" structure: a kinematically dominated axial jet surrounded by a toroidal-field–dominated disk wind. The balance between these components determines whether jets remain steady, become asymmetric, or are quenched. Counter-rotating jets arise naturally, indicating that observed rotation mainly reflects stellar spin rather than the jet-launching radius.
+      </p>
+      <h3>Part 4: Explore different alignment between stellar magnetosphere and disk</h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	(on going)
+      </p>
+      <h3>Part 5: Inclusion of Radiative Transfer in Jet models </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	(on going)
       </p>
     </div>
     <div class="figure" style="width: 500px">
-      <img src="jet.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> a 3D visualization of the current 2D jet simulation, showcasing the jet formed in our simulation </figcaption> 
+      <img src="jet3D.png" alt="Example Figure" style="width: 500px; height: auto;">
+      <img src="magnetosphere.png" alt="Example Figure" style="width: 500px; height: auto;">
+      <figcaption> 3D visualization of model used in Part 2, that includes a star and the stellar magnetosphere (lower panel). A powerful, bipolar jet is launched in this simulation </figcaption> 
     </div>
   </div>
   <!------------------------------------->
@@ -83,42 +133,52 @@
   <!------------------------------------->
   <div class="container">
     <div class="text">
-      <h2 style="--text-align: left"> 
-        Synthetic observations of protostellar envelope
-      </h2>
+      <h1 style="--text-align: left"> 
+        Early Disk and Star Formation Through Collapse of Dense Core
+      </h1>
       <p style="--text-align: left; --margin-left: 15px">
-        Our earlier research into the structure of protostellar envelopes suggests a two-layer model for single star formation, consisting of outer sheetlets and an inner star-disk system, and a three-layer model is proposed for multiple star formation, featuring outer sheetlets, a middle layer of DROD, and an innermost region with stars and circumstellar disks (for further details, see the single and multiple formation projects below). We are now using this star-forming simulation data to bridge theoretical models with observational data and are working on methods to determine magnetic field strengths from observable quantities.
+        Stars and their circumstellar disks form through the collapse of dense molecular cloud cores. Although this phase sets the initial conditions and ultimately shapes the properties of the emerging star–disk system, it remains poorly understood because it spans a wide range of spatial scales and involves complex gas dynamics as well as coupling and decoupling between gas and magnetic fields. In this project, we use numerical simulations to model this early stage, identify the key physical ingredients of protostellar envelopes, and connect them to observable signatures.
+      </p>
+      <h3>Part 1: Single Star and Disk Formation </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	We simulate the collapse of a turbulent molecular cloud core into a protostar and protostellar disk, including ambipolar diffusion (AD) as the dominant non-ideal MHD effect. Strong AD allows magnetic flux to redistribute effectively, enabling the formation of a large (~200 au) disk, while weak AD leads to efficient magnetic braking that prevents disk formation. The protostellar envelope forms warped “gravo-magneto-sheetlets” that channel mass and magnetic flux onto the star and disk through the disk’s upper and lower surfaces.
+      </p>
+      <h3>Part 2: Multiple System Formation via Fragmentation </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	In multiple star formation, the gravito-magneto-sheetlets feed into a Dense Rotation-Dominated Structure (DROD) rather than a single protostellar disk. The DROD, supported by rotation, is highly dynamic and can take irregular shapes, leading to misaligned circumstellar disks when it fragments into multiple stars. Its fragmentation is controlled by the level of magnetization, which depends on the strength of non-ideal MHD effects like ambipolar diffusion.
+      </p>
+      <h3>Part 3: Inferring magnetic field strength through observables </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+      	Using these non-ideal MHD simulations, we propose a simple method to estimate magnetic field strength based on the local gravitational acceleration and the pseudodisk’s column density. This estimate can be refined with observational data on gas kinematics and magnetic field orientation. The method has been carefully validated and calibrated with simulations and is applicable to a wide range of systems.
       </p>
     </div>
     <div class="figure" style="width: 500px">
-      <img src="synthetic_obs.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> Column density in one of our multiple-forming simulations, showing remarkable resemblence to the L1448 protostellar system </figcaption> 
+      <img src="sheetlet.png" alt="Example Figure" style="width: 500px; height: auto;">
+      <figcaption> 3D structure of the gravo-magneto-sheetlets </figcaption>
     </div>
   </div>
-  <!----------------------------->
-  <!--- Past projects ----------->
-  <!----------------------------->
-  <h1>
-     Past and current projects
-  </h1>
   <!--------------------------------->
   <!--- Bootes & Arcturus ----------->
   <!--------------------------------->
   <div class="container">
     <div class="text">
       <h2 style="--text-align: left"> 
-        Bootes & Arcturus code development 
+        Code Development: "Bootes" & "Arcturus" 
       </h2>
       <p style="--text-align: left; --margin-left: 15px">
-        &nbsp&nbsp Computing technologies are upgraded at an astonishing rate each year, but the most recent resources are not often underutilized in High Performance Computing (HPC) for astronomical simulations due to a lack of compatible code. . This code development project aims to address this gap by leveraging the latest computational technologies to accelerate astronomical simulations.
-        <br>
-        <br>
-         &nbsp&nbsp The <b> Bootes </b> simulation code is a fluid simulation code I developed in May, 2022 at the University of Virginia (where I (will) get my Ph.D.). It is named after the Zenith constellation at the time of its birth time (which also tells something about my schedule as an astronomer.). The latest public version of <a href="https://github.com/yishengtu/Bootes">Bootes</a> is compatible to run on both GPU (by OpenACC) and CPU (OpenMP). Currently, I'm adding MPI capibilities and modules for additional physics.
-         <br>
-         <br>
+        &nbsp&nbsp Computing technologies advance rapidly, yet the newest resources are often underutilized in high-performance computing (HPC) for astronomical simulations due to incompatible code. This project aims at developing software that leverages cutting-edge computational technologies to accelerate astronomical simulations.
+      </p>
+      <h3>Part 1: <i>Bootes</i> </h3>
+      <p style="--text-align: left; --margin-left: 15px">
+         &nbsp&nbsp The <b> Bootes </b> simulation code is a fluid dynamics code I developed in May 2022 at the University of Virginia, where I am completing my Ph.D. Its name comes from the Boötes constellation visible at the time of its creation, reflecting a bit of my astronomer’s schedule. The latest public version of <a href="https://github.com/yishengtu/Bootes">Bootes</a> runs on both GPU (via OpenACC) and CPU (via OpenMP), and I am currently adding MPI capabilities and modules for additional physics. 
+      </p>
+      <h3>Part 2: <i>Arcturus</i> </h3>
+      <p style="--text-align: left; --margin-left: 15px">
          &nbsp&nbsp The <b> Arcturus </b> simualtion code is a Lagrangian particle-based tool designed for post-processing hydrodynamics simulations to trace the trajectories of particles or dust. Developed as a lightweight package for ease of use and rapid deployment, Arcturus leverages known hydrodynamics data to evolve particles with adaptive time-stepping, enhancing the code's efficiency.
+      </p>
          <br>
          <br>
+      <p style="--text-align: left; --margin-left: 15px">
          &nbsp&nbsp If you are interested in the codes, please send me an email. I'm happy to share the latest version of the codes.
       </p>
     </div>
@@ -128,56 +188,6 @@
     </div>
   </div>
   
-  <!-------------------------------------->
-  <!--- Protostar formation multiple ----->
-  <!-------------------------------------->
-  <div class="container">
-    <div class="text">
-      <h2 style="--text-align: left"> 
-        Multiple protostar formation
-      </h2>
-      <p style="--text-align: left; --margin-left: 15px">
-        &nbsp&nbsp Most stars are found in multiple systems, yet the formation of close (<100 au) multiple stellar systems, particularly those with misaligned protostellar disks, remains poorly understood. In this project, we extend our single star formation simulations to explore multiple star formations and propose a new formation mechanism: the "DROD Fragmentation Mechanism," which could account for these close, misaligned systems.
-        <br>
-        <br>
-        &nbsp&nbsp The simulation setup builds on the single formation case (see details below) but incorporates higher initial mass and angular momentum. In multiple star formation scenarios, the gravito-magneto-sheetlets (described in the single formation case) feed into a Dense Rotation-Dominated Structure (DROD) rather than a protostellar disk. The DROD, supported against collapse through rotation, is highly dynamic and can exhibit irregular shapes. Due to its dynamic nature, when the DROD fragments into multiple stellar objects, the circumstellar disks around each star can become misaligned. The fragmentation of a DROD depends on its level of magnetization, which is influenced by the strength of non-ideal MHD effects (such as ambipolar diffusion) included in the simulation.
-        <br>
-        <br>
-        &nbsp&nbsp Make sure to check out the <a href="https://www.youtube.com/watch?v=s-eHv7cAObw&t=2s">movie</a> of the multiple star formation!
-        <br>
-        <br>
-        &nbsp&nbsp The DROD fragmentation mechanism is described in detail in <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.3135T/abstract">Tu et al. 2024b</a>
-      </p>
-    </div>
-    <div class="figure" style="width: 500px">
-      <img src="DROD.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> 3D rendering of the DROD. I encourage you to watch the <a href="https://www.youtube.com/watch?v=s-eHv7cAObw&t=2s">movie</a> for visualization of multiple formation through the DROD-fragmentaion mechanism</figcaption>  
-    </div>
-  </div>
-  
-  <!----------------------------------->
-  <!--- Protostar formation single ---->
-  <!----------------------------------->
-  <div class="container">
-    <div class="text">
-      <h2 style="--text-align: left"> 
-        Single protostar and protostellar disk formation
-      </h2>
-      <p style="--text-align: left; --margin-left: 15px">
-        &nbsp&nbsp There is little doubt about the importance of magnetic fields in star formation. However, if the magnetic field is perfectly coupled with the gas (in the ideal MHD limit), the field strength in protostellar disks could become so intense that it might lead to the disk's destruction, a scenario known as the "magnetic braking catastrophe." Non-ideal MHD effects are necessary to alleviate this issue by allowing magnetic fields to be removed from the protostellar disk during the collapse phase, but the extent to which the field can be retained in the disk remains uncertain. Additionally, high-resolution observations are required to accurately resolve the structures within the inner protostellar envelope. This project aims to explore how to mitigate the magnetic braking catastrophe and to elucidate the structure of the protostellar envelope.
-        <br>
-        <br>
-        &nbsp&nbsp We used Athena++ to simulate the collapse of an initially turbulent pseudo-Bonner-Ebert sphere from the collapse phase to the formation of a protostar and a protostellar disk. The simulation includes the dominant non-ideal MHD effect, ambipolar diffusion (AD). Our findings indicate that with strong AD, the magnetic field is effectively removed, allowing the formation of a large (~200 au) disk. Conversely, with weak AD, magnetic braking efficiently removes angular momentum, preventing disk formation. The protostellar envelope is characterized by "gravo-magneto-sheetlets," a disrupted and warped pseudodisk. These sheetlets are responsible for transporting mass and magnetic flux within the protostellar envelope and primarily feed the protostar and protostellar disk through the upper and lower surfaces of the disk.
-        <br>
-        <br>
-        &nbsp&nbsp The results are published in <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.52710131T/abstract">Tu et al. 2024a</a>
-      </p>
-    </div>
-    <div class="figure" style="width: 500px">
-      <img src="sheetlet.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> 3D structure of the gravo-magneto-sheetlets </figcaption>
-    </div>
-  </div>
   
   <!---------------------------->
   <!--- Grain Growth ----------->
@@ -192,10 +202,7 @@
         Observations of early planet formation and large (mm/cm-sized) dust grains in protostellar disks suggests early grain growth in protostellar environement. How do the grains grow to these large sizes?
         <br>
         <br>
-        &nbsp&nbsp To answer this question, we used Athena++ to conduct radiation-hydrodynamics simulation of protostellar disk formation. I developed a dust simulation code that post-processes Athena++ output and simulation dust advection and grain growth. We found grain growth slow in laminar protostellar disks, and a factor of 4 increase in grain growth rate is needed to produce the mm/cm-sized grains. An analytic solution of the Smolochowski coagulation equation is used to validate the simulation results, and the analytic solution provides an easy way to estimate grain growth time scale.
-        <br>
-        <br>
-        &nbsp&nbsp The results are published in <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.4780T/abstract">Tu et al. 2022</a>
+        &nbsp&nbsp To answer this question, we used Athena++ to conduct radiation-hydrodynamics simulation of protostellar disk formation. I developed a dust simulation code that post-processes Athena++ output and simulation dust advection and grain growth (this code later becomes the progenitors of the <i>Bootes</i> and <i>Arcturus</i> codes). We found grain growth slow in laminar protostellar disks, and a factor of 4 increase in grain growth rate is needed to produce the mm/cm-sized grains. An analytic solution of the Smolochowski coagulation equation is used to validate the simulation results, and the analytic solution provides an easy way to estimate grain growth time scale.
       </p>
     </div>
     <div class="figure" style="width: 500px">
@@ -203,70 +210,12 @@
       <figcaption> Rings and gaps in young (<500,000 yr old) disk system IRS 63, indictive of early grain growth. Image adopted from <a href="https://www.nature.com/articles/s41586-020-2779-6">Segura-Cox D. M., et al., 2020,</a> </figcaption>
     </div>
   </div>
-
-  <!------------------------>
-  <!--- Header: undergraudate research ------>
-  <!------------------------>
-  <h1  style="--text-align: center">
-    My undergraduate research at the University of Rochester
-  </h1>
-  <!----------------------------->
-  <!--- Fermilab ----------->
-  <!----------------------------->
-  <div class="container">
-    <div class="text">
-      <h2 style="--text-align: left"> 
-        Theory and conceptual design of kickers for echo generation in IOTA
-      </h2>
-      <p style="--text-align: left; --margin-left: 15px">
-        <ul style="--text-align: left; --margin-left: 15px">
-        <li> Advisor: Tanaji Sen & Jean-Francois Ostiguy, Fermi National Accelerator Laboratory, Naperville, IL, 
-        Summer 2019 (Lee Teng Internship) </li>
-        <li> Project: Conceptual design of dipole and quadrupole stripline kickers used in steering the particle beam as it goes around the accelerator. The project mainly focus on the electric and magnetic field properties of the kickers. </li>
-        <li> A <a href="https://indico.fnal.gov/event/21420/session/8/material/0/0.pdf">poster</a>
-        and a <a href="https://indico.fnal.gov/event/21420/session/8/material/1/0.pdf">report</a> 
-        are written for this project  </li>
-        </ul>
-      </p>
-    </div>
-    <div class="figure" style="width: 500px">
-      <img src="dipole_kicker.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> A dipole kicker, with two curved kicker plates </figcaption>
-    
-    </div>
-  </div>
-    
-  <!----------------------------->
-  <!--- CEE ----------->
-  <!----------------------------->
-  <div class="container">
-    <div class="text">
-      <h2 style="--text-align: left"> 
-        Simulations of Common Envelope Evolution (CEE)
-      </h2>
-      <p style="--text-align: left; --margin-left: 15px">
-        <ul style="--text-align: left; --margin-left: 15px">
-          <li> Advisor: Adam Frank & Eric G. Blackman, University of Rochester, Rochester NY, Summer 2018 - Spring 2020 </li>
-          <li> Selection of involved projects </li>
-          <ul style="--text-align: left; --margin-left: 15px;">
-            <li> Energy budget and core envelope motion in a Common Envelope Evolution Simulation. </li>
-            <li> Examining the effects of recombination by updating the EOS in used in the Common Envelope Evolution simulation. </li>
-          </ul>
-        </ul>
-      </p>
-    </p>
-    </div>
-    <div class="figure" style="width: 500px">
-      <img src="CEE.png" alt="Example Figure" style="width: 500px; height: auto;">
-      <figcaption> A frame in our Common Envelope Evolution simulation, with two stellar cores at the center and the surrounding (disrupted) envelope. </figcaption>
-    </div>
-  </div>
 </div>    <! content >
 
 
 <footer>
 <p>
-   &copy; 2024 Yisheng Tu. All rights reserved.
+   &copy; 2026 Yisheng Tu. All rights reserved.
 </p>
 </footer>
 </body>
